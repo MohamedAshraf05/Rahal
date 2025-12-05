@@ -2,14 +2,6 @@
 const filters = document.querySelectorAll(".filter");
 const cards = document.querySelectorAll(".travel-card");
 
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("../navbar.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-        });
-})
-
 filters.forEach(btn => {
     btn.addEventListener("click", () => {
 
@@ -27,7 +19,6 @@ filters.forEach(btn => {
         });
     });
 });
-
 // SEARCH FUNCTION
 document.getElementById("searchInput").addEventListener("input", function () {
     let value = this.value.toLowerCase();
