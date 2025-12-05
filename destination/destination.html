@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razal – Explore Destinations</title>
+    <link rel="stylesheet" href="destination.css" />
+</head>
+<body>
+
+ <!-- navbar  -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="logo">
+        <span>Raɀal</span>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">☰</div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="close-btn" id="closeBtn">✕</div>
+
+        <ul class="mobile-menu-links">
+            <li>Home</li>
+            <li class="active">Destinations</li>
+            <li>About Us</li>
+            <li>Add Place</li>
+            <li>Login</li>
+            <li>Register</li>
+        </ul>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li>Home</li>
+        <li class="active">Destinations</li>
+        <li>About Us</li>
+        <li>Add Place</li>
+        <li>Login</li>
+        <li>Register</li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Explore Destinations</h1>
+    <p>Browse through our curated collection of amazing destinations around the world</p>
+
+    <div class="search-box">
+        <i class="icon">🔍</i>
+        <input type="text" id="searchInput" placeholder="Search by destination or country...">
+    </div>
+
+    <!-- FILTERS -->
+    <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="Beach">Beach</button>
+        <button class="filter" data-filter="Mountain">Mountain</button>
+        <button class="filter" data-filter="Desert">Desert</button>
+        <button class="filter" data-filter="Historical">Historical</button>
+        <button class="filter" data-filter="City">City</button>
+    </div>
+</section>
+<div class="card-container">
+    
+    <!-- Card 1 -->
+    <div class="travel-card" data-category="Beach">
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+            <span class="badge">Beach</span>
+        </div>
+
+        <div class="card-body">
+            <h2>Santorini</h2>
+
+            <p class="location">
+                <span>📍</span> Greece
+            </p>
+
+            <div class="rating-row">
+                <div class="stars">★★★★★</div>
+                <span class="rating-value">5.0</span>
+            </div>
+
+            <div class="price-row">
+                <span class="price">$1200</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- DUPLICATE more cards -->
+    <div class="travel-card" data-category="Mountain">
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef" alt="">
+            <span class="badge">Mountain</span>
+        </div>
+
+        <div class="card-body">
+            <h2>Swiss Alps</h2>
+            <p class="location"><span>📍</span> Switzerland</p>
+
+            <div class="rating-row">
+                <div class="stars">★★★★★</div>
+                <span class="rating-value">4.9</span>
+            </div>
+
+            <div class="price-row">
+                <span class="price">$900</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="travel-card" data-category="Desert">
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" alt="">
+            <span class="badge">Desert</span>
+        </div>
+
+        <div class="card-body">
+            <h2>Dubai</h2>
+            <p class="location"><span>📍</span> UAE</p>
+
+            <div class="rating-row">
+                <div class="stars">★★★★★</div>
+                <span class="rating-value">4.7</span>
+            </div>
+
+            <div class="price-row">
+                <span class="price">$1500</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="destination.js"></script>
+
+</body>
+</html>
