@@ -1,0 +1,31 @@
+:root {
+    /* ===== MAIN BRAND COLORS ===== */
+    --color-primary: #c29b72;
+    --color-primary-light: #d1b08a;
+    --color-primary-soft: #c7b095;
+    --color-primary-muted: #d1bb9e;
+
+    /* ===== NATURAL / BACKGROUND COLORS ===== */
+    --color-background: #f9f6f1;
+    --color-background-light: #f8f6f3;
+    --color-white: #ffffff;
+
+    /* ===== TEXT COLORS ===== */
+    --color-text-dark: #444444;
+    --color-text-medium: #555555;
+    --color-text-light: #666666;
+
+    /* ===== NEUTRAL / UI COLORS ===== */
+    --color-gray-light: #eeeeee;
+    --color-shadow: rgba(0, 0, 0, 0.10);
+    --color-shadow-strong: rgba(0, 0, 0, 0.15);
+
+    /* ===== RATING COLOR ===== */
+    --color-star: #f5c518;
+
+    /* ===== PRICE COLOR ===== */
+    --color-price: #967d5b;
+
+    /* ===== MISC ===== */
+    --color-border-black: #000000;
+}
