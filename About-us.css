@@ -1,0 +1,333 @@
+* {
+    font-family: "Plus Jakarta Sans";
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url("imgs/download\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    animation: fadeInUp 1.3s ease forwards;
+}
+
+.hero-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+
+    text-shadow: 0 6px 25px rgba(0, 0, 0, 0.9);
+}
+
+.hero-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.9;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
+/* Caption Above Video */
+.hero-video-caption {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 30px;  
+}
+
+.hero-video-caption .caption-text h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #705a5a; 
+}
+
+.hero-video-caption .caption-text p {
+    font-size: clamp(1.5rem, 1.5vw, 1.2rem);
+    color: #4a4242;
+    line-height: 1.5;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Video Section */
+.hero-video-section {
+      flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.background-video {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+/*story*/
+.story-section {
+    padding: 40px 5%;
+    background: #fff;
+    text-align: center;
+}
+
+.story-content {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.story-text-box {
+    flex: 1;
+    min-width: 320px;
+}
+
+.story-text-box h2 {
+    font-size: clamp(36px, 4vw, 60px);
+    color: #705a5a;
+    margin: 0 0 20px 0;
+}
+
+
+.story-text-box p {
+    line-height: 1.8;
+    font-size: clamp(24px, 1.6vw, 24px);
+    color: #2b2222;
+    font-weight: 500;
+}
+
+/* الصورة */
+.story-image-box {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.story-image-box img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+@media (max-width: 700px) {
+
+    .story-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-image-box img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/*cards*/
+.mession-vision-section {
+    padding: 60px 5%;
+    background: #faf8f4;
+}
+
+.mession-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.mession-vision-box {
+    background: #ffffff;
+    padding: 40px 35px;
+    width: 330px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.mession-vision-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mession-vision-icon {
+    background: #e0c5a6;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mession-vision-icon img {
+    width: 38px;
+    opacity: 0.9;
+}
+
+.mession-vision-box h3 {
+    font-size: 28px;
+    margin: 20px 0;
+    color: #705a5a;
+}
+
+.mession-vision-box ul {
+    list-style: disc;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.mvv-box ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/*meet our team*/
+
+.team-section {
+    text-align: center;
+    padding: 70px 5%;
+    background: #faf8f4;
+}
+
+.team-title {
+    font-size: 36px;
+    color: #705a5a;
+    margin-bottom: 10px;
+}
+
+.team-subtitle {
+    color: #1f1d1b;
+    font-size: 24px;
+    margin-bottom: 70px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: #fff;
+    width: 350px;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.17);
+}
+
+.team-card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 24px;
+    color: #705a5a;
+    margin-bottom: 5px;
+}
+
+
+/*reviews*/
+.stats-section {
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.stats-container {
+    width: 100%;
+    max-width: 1200px;
+    background: linear-gradient(100deg,#e4d2bd,#d6c0a7);
+    padding: 40px 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 19px;
+    color: #f0ede9;
+    margin: 0;
+}
+
+@media (max-width: 868px) {
+    .stats-container {
+        gap: 25px;
+    }
+}
+
