@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahhal Touristic Website</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div class="page-layout">
+
+
+        <div class="add-place-container">
+            <h1 class="title">Add New Egyptian Destination</h1>
+            <p class="subtitle">Share a new place from Egypt's rich heritage</p>
+
+            <form class="add-place-form" id="addPlaceForm">
+
+                <div class="form-group">
+                    <label>Place Name</label>
+                    <input type="text" id="placeName">
+                    <small class="error-msg" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>City / Governorate</label>
+                    <select id="city">
+                        <option value="">Select a City</option>
+                        <option>Cairo</option>
+                        <option>Giza</option>
+                        <option>Luxor</option>
+                        <option>Aswan</option>
+                        <option>Alexandria</option>
+                        <option>Fayoum</option>
+                        <option>Red Sea</option>
+                        <option>Sinai</option>
+                        <option>Port Said</option>
+                    </select>
+                    <small class="error-msg" id="cityError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="category">
+                        <option value="">Select Category</option>
+                        <option>Historical</option>
+                        <option>Beach</option>
+                        <option>Adventure</option>
+                        <option>Museum</option>
+                        <option>Desert Safari</option>
+                        <option>Religious</option>
+                    </select>
+                    <small class="error-msg" id="categoryError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="description" rows="5"></textarea>
+                    <small class="error-msg" id="descriptionError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Image</label>
+                    <input type="file" id="image" accept="image/*">
+                    <small class="error-msg" id="imageError"></small>
+                </div>
+
+                <button type="submit" class="add-btn">Add Place</button>
+            </form>
+        </div>
+        <div class="table-container">
+            <h1 class="table-title">Recently Added Destinations</h1>
+            <p class="table-sub">Showing data from database</p>
+
+            <table class="destination-table">
+                <tr>
+                    <th>ID</th>
+                    <th>Place Name</th>
+                    <th>City</th>
+                    <th>Category</th>
+                    <th>Date Added</th>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>Karnak Temple</td>
+                    <td>Luxor</td>
+                    <td><span class="cat-badge">Historical</span></td>
+                    <td>2025-01-02</td>
+                </tr>
+
+                <tr>
+                    <td>#2</td>
+                    <td>Philae Temple</td>
+                    <td>Aswan</td>
+                    <td><span class="cat-badge">Historical</span></td>
+                    <td>2025-01-10</td>
+                </tr>
+
+                <tr>
+                    <td>#3</td>
+                    <td>Ras Mohammed</td>
+                    <td>Sinai</td>
+                    <td><span class="cat-badge">Beach</span></td>
+                    <td>2025-01-15</td>
+                </tr>
+
+                <tr>
+                    <td>#4</td>
+                    <td>Siwa Oasis</td>
+                    <td>Matrouh</td>
+                    <td><span class="cat-badge">Desert Safari</span></td>
+                    <td>2025-01-20</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+    <div id="footer"></div>
+    <script src="assets/js/load.js"></script>
+    <script src="assets/js/add-place.js"></script>
+
+</body>
+
+</html>
