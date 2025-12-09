@@ -1,21 +1,40 @@
 * {
     font-family: "Plus Jakarta Sans";
 }
-
 .hero-section {
     position: relative;
     width: 100%;
     height: 70vh;
-    background-image: url("imgs/download\ \(1\).png");
+    background-image: url("../imgs/about-us-background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+
     border-radius: 20px;
 }
+
+/* Optional: dark overlay to improve text visibility */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    border-radius: 20px;
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+}
+
 
 .hero-content {
     position: relative;

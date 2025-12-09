@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razal – Explore Destinations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/destination.css" />
+</head>
+<body>
+
+<div id="navbar"></div>
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Explore Destinations</h1>
+    <p>Browse through our curated collection of amazing destinations around the world</p>
+
+    <div class="search-box">
+        <i class="icon fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search by destination or country...">
+    </div>
+
+    <!-- FILTERS -->
+    <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="Beach">Beach</button>
+        <button class="filter" data-filter="Mountain">Mountain</button>
+        <button class="filter" data-filter="Desert">Desert</button>
+        <button class="filter" data-filter="Historical">Historical</button>
+        <button class="filter" data-filter="City">City</button>
+    </div>
+</section>
+
+<div class="top-places-container">
+
+    <div class="top-places-card">
+        <span class="card-tag">Historical</span>
+        <img src="assets/imgs/photo_2025-12-08_16-07-32.jpg" alt="Karnak Temple">
+
+        <div class="card-details">
+            <h3>Karnak Temple</h3>
+            <p class="location">Luxur, Egypt</p>
+            <div class="rating-price-row">
+                <div class="rating">
+                    <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
+                    <span class="rate-value">5.0</span>
+                </div>
+                <span class="price">$ 1200</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-places-card">
+        <span class="card-tag">Historical</span>
+        <img src="assets/imgs/photo_2025-12-08_16-07-51.jpg" alt="Philae Temple">
+        <div class="card-details">
+            <h3>Philae Temple</h3>
+            <p class="location">Asawan, Egypt</p>
+            <div class="rating-price-row">
+                <div class="rating">
+                    <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
+                    <span class="rate-value">5.0</span>
+                </div>
+                <span class="price">$ 890</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-places-card">
+        <span class="card-tag">Beach</span>
+        <img src="assets/imgs/photo_2025-12-08_16-07-39.jpg" alt="Ras Mohammed">
+        <div class="card-details">
+            <h3>Ras Mohammed</h3>
+            <p class="location">Sinai, Egypt</p>
+            <div class="rating-price-row">
+                <div class="rating">
+                    <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
+                    <span class="rate-value">5.0</span>
+                </div>
+                <span class="price">$ 650</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-places-card">
+        <span class="card-tag">Desert Safari</span>
+        <img src="assets/imgs/photo_2025-12-08_16-08-11.jpg" alt="Siwa Oasis">
+        <div class="card-details">
+            <h3>Siwa Oasis</h3>
+            <p class="location">Matrouh, Egypt</p>
+            <div class="rating-price-row">
+                <div class="rating">
+                    <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
+                    <span class="rate-value">5.0</span>
+                </div>
+                <span class="price">$ 780</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+<script src="assets/js/destination.js"></script>
+<script src="assets/js/load.js"></script>
+
+</body>
+</html>
