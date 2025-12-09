@@ -699,3 +699,115 @@ a:hover,
         height: 55%;
     }
 }
+
+.destination-table-section {
+    width: 95%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.table-header {
+    background: #c9b59c;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    padding-left: 24px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 0;
+}
+
+.table-title {
+    font-size: 32px;
+    color: #5f5f5c;
+    margin: 0;
+}
+
+.table-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4a3c32;
+}
+
+.table-wrapper {
+    background: #ffffff; /* light theme for body */
+    padding: 0;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.destinations-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.destinations-table thead {
+    background: #efe9e3; /* keep header as is */
+}
+
+.destinations-table th,
+.destinations-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.season {
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.summer { background: #ffd79a; }
+.spring { background: #ffe2b5; }
+.winter { background: #d4e8ff; }
+
+.cat-tag {
+    background: #efe7dc;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+/* Activities */
+.activities-section {
+    width: 95%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #ded5cd;
+    padding: 50px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.activities-title {
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #4a3c32;
+}
+
+.activities-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.activity-item {
+    text-align: center;
+}
+
+.icon-circle {
+    width: 75px;
+    height: 75px;
+    background: #d4bfa7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.icon-circle img {
+    width: 45px;
+}
