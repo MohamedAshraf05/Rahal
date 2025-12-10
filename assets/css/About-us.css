@@ -161,7 +161,7 @@
     font-weight: 500;
 }
 
-/* الصورة */
+/* imges */
 .story-image-box {
     flex: 1;
     min-width: 250px;
@@ -284,10 +284,11 @@
 .team-card {
     background: #fff;
     width: 350px;
-    padding: 25px 20px;
+    height: 430px;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
     transition: 0.3s ease;
+    overflow: hidden;
     text-align: center;
 }
 
@@ -297,17 +298,18 @@
 }
 
 .team-card img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
+   width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .team-card h3 {
     font-size: 24px;
     color: #705a5a;
     margin-bottom: 5px;
+    padding-top: 50px;
 }
 
 
