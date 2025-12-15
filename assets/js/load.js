@@ -1,4 +1,5 @@
-fetch("nav-bar.html")
+document.addEventListener("DOMContentLoaded", function() {
+  fetch("nav-bar.html")
   .then(res => res.text())
   .then(data => {
     document.getElementById("navbar").innerHTML = data;
@@ -23,3 +24,4 @@ fetch("nav-bar.html")
   .then(data => {
     document.getElementById("footer").innerHTML = data;
   });
+})

@@ -1,6 +1,5 @@
-* {
-    font-family: "Plus Jakarta Sans";
-}
+@import url('nav-bar.css');
+
 .hero-section {
     position: relative;
     width: 100%;
