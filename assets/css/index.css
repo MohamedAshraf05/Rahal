@@ -41,6 +41,7 @@
     gap: 20px;
 }
 
+
 .btn {
     padding: 14px 30px;
     border-radius: 10px;
@@ -223,113 +224,6 @@
     font-size: 18px;
     font-weight: 600;
     color: #141310;
-}
-
-.page-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding: 40px;
-    margin-top: 50px;
-}
-
-
-.add-place-container {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 18px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-
-}
-
-.title {
-    font-size: 28px;
-    text-align: center;
-    color: #543A14;
-}
-
-.subtitle {
-    text-align: center;
-    margin-bottom: 20px;
-    opacity: 80%;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    font-weight: 600;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1.8px solid #f8f1e8;
-    border-radius: 10px;
-    background: #f2ebe5;
-}
-
-.add-btn {
-    width: 100%;
-    padding: 14px;
-    background: #543A14;
-    color: #FFF0DC;
-    border-radius: 12px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-        transition: 0.25s ease-in-out;
-}
-.add-btn:hover{
-    background: #7d5922;
-}
-
-.error-msg {
-    color: red;
-    font-size: 13px;
-}
-
-.table-container {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 18px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-}
-
-.table-title {
-    font-size: 28px;
-    color: #543A14;
-}
-
-.table-sub {
-    opacity: 80%;
-    margin-bottom: 20px;
-}
-
-.destination-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.destination-table th {
-    background: #f2ebe5;
-    padding: 12px;
-    text-align: left;
-    color: #543A14;
-}
-
-.destination-table td {
-    padding: 15px 12px;
-    border-bottom: 1px solid #eee;
-}
-
-.destination-table tr:hover {
-    background: #f8f8f8;
 }
 
 .site-footer {
@@ -591,5 +485,152 @@ a:hover,
 
     .top-places-card img:first-of-type {
         height: 55%;
+    }
+}
+
+
+/* ===============================
+   HERO RESPONSIVE CLEANUP
+================================ */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+    .hero {
+        height: 85vh;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+        margin-bottom: 32px;
+    }
+}
+
+
+/* Tablets & small laptops */
+@media (max-width: 768px) {
+
+    .hero {
+        height: 80vh;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+        line-height: 1.25;
+        margin-bottom: 16px;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .hero {
+        height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+        font-weight: 600;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+/* ===============================
+   MAP SECTION RESPONSIVE
+================================ */
+
+.layout-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 5%;
+}
+
+/* Map container */
+.map-section {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive iframe */
+.map-section iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ---------- Tablet ---------- */
+@media (max-width: 992px) {
+    .layout-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .map-section {
+        min-height: 380px;
+    }
+}
+
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+    .layout-container {
+        padding: 40px 20px;
+    }
+
+    .map-section {
+        min-height: 320px;
+        border-radius: 14px;
+    }
+}
+
+
+/* ---------- Small Mobile ---------- */
+@media (max-width: 480px) {
+    .map-section {
+        min-height: 260px;
     }
 }
