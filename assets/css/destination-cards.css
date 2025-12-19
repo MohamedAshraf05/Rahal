@@ -1,0 +1,100 @@
+.top-places-card {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-places-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.top-places-card img:first-of-type {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.card-details {
+    padding: 30px;
+    padding-left: 50px;
+    width: 100%;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.top-places-card h3 {
+    font-size: 18px;
+    color: #1f1d1b;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    display: block;
+    text-align: left;
+}
+
+.location {
+    font-size: 16px;
+    color: #565555;
+    margin-bottom: 10px;
+    text-align: left;
+
+}
+
+.rating-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 30px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating img[alt="rate"] {
+    width: 70px;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+.rate-value {
+    font-size: 16px;
+    color: #2e2e2e;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #705a5a;
+}
+
+.card-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(214, 189, 168, 0.85);
+    color: #181818;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 10;
+}

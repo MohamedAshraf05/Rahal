@@ -1,6 +1,9 @@
 /* Importing Global style */
 @import url('global.css');
 @import url('nav-bar.css');
+@import url('destination-cards.css');
+@import url('footer.css');
+
 /* HERO */
 .hero {
     text-align: center;
@@ -10,6 +13,7 @@
 
 .hero h1 {
     font-size: 42px;
+    color: #543A14;
 }
 
 .hero p {
@@ -58,50 +62,7 @@
     color: var(--color-white);
 }
 
-/* CARDS GRID (OLD SYSTEM) */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    padding: 40px 40px;
-}
 
-.card {
-    background: var(--color-white);
-    padding-bottom: 15px;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 6px 12px var(--color-shadow);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.card h3 {
-    padding: 12px 15px;
-    font-size: 18px;
-}
-
-/* BADGE (GLOBAL) */
-.badge {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: var(--color-primary-light);
-    color: var(--color-white);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-}
 
 /* RESPONSIVE HERO */
 @media (max-width: 900px) {
@@ -137,90 +98,6 @@
     }
 }
 
-/* NEW TRAVEL CARDS (3 PER ROW) */
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    padding: 20px;
-}
-
-.travel-card {
-    background: var(--color-white);
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px var(--color-shadow);
-    transition: 0.3s;
-}
-
-.travel-card:hover {
-    transform: translateY(-5px);
-}
-
-/* Card Image */
-.card-image {
-    position: relative;
-}
-
-.card-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
-}
-
-.badge {
-    background: var(--color-primary-light);
-}
-
-/* Card Body */
-.card-body {
-    padding: 18px;
-}
-
-.card-body h2 {
-    margin: 0;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.location {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin: 8px 0;
-    color: var(--color-text-light);
-    font-size: 15px;
-}
-
-.rating-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
-}
-
-.stars {
-    font-size: 18px;
-    color: #f5c518;
-}
-
-.rating-value {
-    font-weight: bold;
-    color: var(--color-text);
-}
-
-.price-row {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--color-primary);
-}
-
 /* RESPONSIVE GRID */
 @media (max-width: 900px) {
     .card-container {
@@ -238,123 +115,13 @@
     }
 }
 
-
-
-.site-footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #eeddc9;
-    padding: 20px 0 15px 0;
-    z-index: 100;
-}
-
-.footer-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.footer-column {
-    flex: 1;
-    min-width: 200px;
-}
-
-
-.footer-column h3 {
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li {
-    margin: 10px 0;
-}
-
-.footer-column a {
-    text-decoration: none;
-    color: #2c2b2b;
-    transition: all 0.3s ease;
-}
-
-#rahallogo {
-    width: 100px;
-    height: 50px;
-    padding-bottom: 15px;
-}
-
-.social-icons img {
-    width: 28px;
-    margin-right: 15px;
-}
-
-#conicon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-#contacticon,
-p img {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.footer-column p {
-    margin-bottom: 10px;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 2px solid rgba(0, 0, 0, 0.1);
-    color: #000;
-}
-
-
-a:hover,
-.social-icons img:hover {
-    color: #000;
-    font-weight: bold;
-    transform: translateY(-2px);
-}
 .top-places-section {
     text-align: center;
     padding: 70px 0;
     background: #faf8f4;
 }
 
-.title {
-        font-size: 3rem;
-    font-weight: 600;
-    /* color: #4a3c32; */
-    color: #543A14;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    opacity: 80%;
-    font-size: 18px;
-    margin-bottom: 50px;
-    padding: 0 5%;
-}
-
 .top-places-container {
-    /* max-width: 1200px; */
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -362,125 +129,6 @@ a:hover,
     flex-wrap: wrap;
     padding: 0 20px;
     margin-bottom: 120px;
-}
-
-.top-places-card {
-    background: #fff;
-    width: 300px;
-    height: 400px;
-    padding: 0;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.top-places-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.top-places-card img:first-of-type {
-    width: 100%;
-    height: 60%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    margin-bottom: 0;
-}
-
-.card-details {
-    padding: 30px;
-    padding-left: 50px;
-    width: 100%;
-    text-align: left;
-    flex-grow: 1;
-}
-
-.top-places-card h3 {
-    font-size: 18px;
-    color: #1f1d1b;
-    margin-top: 0;
-    margin-bottom: 5px;
-    padding-bottom: 0;
-    display: block;
-    text-align: left;
-}
-
-.location {
-    font-size: 16px;
-    color: #565555;
-    margin-bottom: 10px;
-        text-align: left;
-
-}
-
-.rating-price-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    padding-right: 30px;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-}
-
-.rating img[alt="rate"] {
-    width: 70px;
-    height: auto;
-    margin-right: 5px;
-    margin-bottom: 0;
-}
-
-.rate-value {
-    font-size: 16px;
-    color: #2e2e2e;
-    margin-left: 5px;
-    font-weight: 500;
-}
-
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #705a5a;
-}
-
-.view-all-button {
-    background-color: #543A14;
-    color: #fff;
-    border: none;
-    padding: 30px 50px;
-    margin-top: 70px;
-    border-radius: 12px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.view-all-button:hover {
-    background-color: #7d5922;
-    transform: translateY(-2px);
-}
-
-.card-tag {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: rgba(214, 189, 168, 0.85);
-    color: #181818;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 15px;
-    font-weight: bold;
-    z-index: 10;
 }
 
 @media (max-width: 1000px) {
@@ -533,10 +181,11 @@ a:hover,
 }
 
 .table-wrapper {
-    background: #ffffff; /* light theme for body */
+    background: #ffffff;
+    /* light theme for body */
     padding: 0;
     border-radius: 0 0 15px 15px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .destinations-table {
@@ -545,7 +194,8 @@ a:hover,
 }
 
 .destinations-table thead {
-    background: #efe9e3; /* keep header as is */
+    background: #efe9e3;
+    /* keep header as is */
 }
 
 .destinations-table th,
@@ -561,9 +211,17 @@ a:hover,
     font-size: 14px;
 }
 
-.summer { background: #ffd79a; }
-.spring { background: #ffe2b5; }
-.winter { background: #d4e8ff; }
+.summer {
+    background: #ffd79a;
+}
+
+.spring {
+    background: #ffe2b5;
+}
+
+.winter {
+    background: #d4e8ff;
+}
 
 .cat-tag {
     background: #efe7dc;
@@ -654,21 +312,10 @@ a:hover,
         font-size: 24px;
     }
 }
+
 @media (max-width: 768px) {
     .activities-container {
         gap: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    #conicon {
-        justify-content: center;
     }
 }
 
@@ -712,6 +359,7 @@ a:hover,
         padding-right: 0;
     }
 }
+
 @media (max-width: 480px) {
     .activities-container {
         flex-direction: column;

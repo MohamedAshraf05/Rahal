@@ -1,4 +1,7 @@
 @import url('nav-bar.css');
+@import url('destination-cards.css');
+@import url('footer.css');
+
 .hero {
     position: relative;
     height: 88vh;
@@ -9,6 +12,7 @@
     text-align: center;
     color: white;
     padding: 0 20px;
+    margin-top: 50px;
 }
 
 .hero-overlay {
@@ -26,7 +30,7 @@
 .hero h1 {
     font-size: 4rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .hero p {
@@ -132,15 +136,42 @@
 .experience h2 {
     font-size: 3rem;
     font-weight: 600;
-    /* color: #4a3c32; */
     color: #543A14;
 }
 
 .experience p {
     margin: 10px 0 40px;
     opacity: 80%;
-    /* color: #6d5e53; */
     font-size: 1.2rem;
+}
+
+.top-places-section {
+    text-align: center;
+    padding: 70px 0;
+    background: #faf8f4;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #543A14;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    opacity: 80%;
+    font-size: 18px;
+    margin-bottom: 50px;
+    padding: 0 5%;
+}
+
+.top-places-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 .video-container {
@@ -163,6 +194,7 @@
     gap: 40px;
     align-items: start;
     padding: 40px 20px;
+    align-items: stretch;
 }
 
 .map-section iframe {
@@ -208,7 +240,6 @@
     width: 42px;
     height: 42px;
     background: #eeddc9;
-    ;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -226,215 +257,6 @@
     color: #141310;
 }
 
-.site-footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #eeddc9;
-    padding: 20px 0 15px 0;
-    z-index: 100;
-}
-
-.footer-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.footer-column {
-    flex: 1;
-    min-width: 200px;
-}
-
-
-.footer-column h3 {
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li {
-    margin: 10px 0;
-}
-
-.footer-column a {
-    text-decoration: none;
-    color: #2c2b2b;
-    transition: all 0.3s ease;
-}
-
-#rahallogo {
-    width: 100px;
-    height: 50px;
-    padding-bottom: 15px;
-}
-
-.social-icons img {
-    width: 28px;
-    margin-right: 15px;
-}
-
-#conicon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-#contacticon,
-p img {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-.footer-column p {
-    margin-bottom: 10px;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 2px solid rgba(0, 0, 0, 0.1);
-    color: #000;
-}
-
-a:hover,
-.social-icons img:hover {
-    color: #000;
-    font-weight: bold;
-    transform: translateY(-2px);
-}
-.top-places-section {
-    text-align: center;
-    padding: 70px 0;
-    background: #faf8f4;
-}
-
-.title {
-        font-size: 3rem;
-    font-weight: 600;
-    /* color: #4a3c32; */
-    color: #543A14;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    opacity: 80%;
-    font-size: 18px;
-    margin-bottom: 50px;
-    padding: 0 5%;
-}
-
-.top-places-container {
-    /* max-width: 1200px; */
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 0 20px;
-}
-
-.top-places-card {
-    background: #fff;
-    width: 300px;
-    height: 400px;
-    padding: 0;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-    transition: 0.3s ease;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.top-places-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.top-places-card img:first-of-type {
-    width: 100%;
-    height: 60%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    margin-bottom: 0;
-}
-
-.card-details {
-    padding: 30px;
-    padding-left: 50px;
-    width: 100%;
-    text-align: left;
-    flex-grow: 1;
-}
-
-.top-places-card h3 {
-    font-size: 18px;
-    color: #1f1d1b;
-    margin-top: 0;
-    margin-bottom: 5px;
-    padding-bottom: 0;
-    display: block;
-    text-align: left;
-}
-
-.location {
-    font-size: 16px;
-    color: #565555;
-    margin-bottom: 10px;
-        text-align: left;
-
-}
-
-.rating-price-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    padding-right: 30px;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-}
-
-.rating img[alt="rate"] {
-    width: 70px;
-    height: auto;
-    margin-right: 5px;
-    margin-bottom: 0;
-}
-
-.rate-value {
-    font-size: 16px;
-    color: #2e2e2e;
-    margin-left: 5px;
-    font-weight: 500;
-}
-
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #705a5a;
-}
 
 .view-all-button {
     background-color: #543A14;
@@ -454,18 +276,6 @@ a:hover,
     transform: translateY(-2px);
 }
 
-.card-tag {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: rgba(214, 189, 168, 0.85);
-    color: #181818;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 15px;
-    font-weight: bold;
-    z-index: 10;
-}
 
 @media (max-width: 1000px) {
     .top-places-container {
@@ -487,11 +297,6 @@ a:hover,
         height: 55%;
     }
 }
-
-
-/* ===============================
-   HERO RESPONSIVE CLEANUP
-================================ */
 
 /* Large tablets */
 @media (max-width: 1024px) {
@@ -570,10 +375,6 @@ a:hover,
         margin: 0 auto;
     }
 }
-
-/* ===============================
-   MAP SECTION RESPONSIVE
-================================ */
 
 .layout-container {
     display: grid;

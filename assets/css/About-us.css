@@ -1,4 +1,5 @@
 @import url('nav-bar.css');
+@import url('footer.css');
 
 .hero-section {
     position: relative;
@@ -8,16 +9,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    margin-top: 50px;
     border-radius: 20px;
 }
 
-/* Optional: dark overlay to improve text visibility */
 .hero-section::before {
     content: "";
     position: absolute;
@@ -25,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0, 0, 0, 0.35);
     border-radius: 20px;
 }
 
@@ -87,30 +86,31 @@
         max-width: 90%;
     }
 }
+
 /* Caption Above Video */
 .hero-video-caption {
     text-align: center;
     padding: 40px 20px;
-    margin-top: 30px;  
+    margin-top: 30px;
 }
 
 .hero-video-caption .caption-text h2 {
     font-size: clamp(2rem, 3vw, 3rem);
     font-weight: 700;
     margin-bottom: 15px;
-    color: #705a5a; 
+    color: #705a5a;
 }
 
 .hero-video-caption .caption-text p {
     font-size: clamp(1.5rem, 1.5vw, 1.2rem);
     color: #4a4242;
     line-height: 1.5;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Video Section */
 .hero-video-section {
-      flex: 1;
+    flex: 1;
     min-width: 250px;
     display: flex;
     justify-content: center;
@@ -122,6 +122,7 @@
     object-fit: contain;
     border-radius: 20px;
 }
+
 /*story*/
 .story-section {
     padding: 40px 5%;
@@ -278,17 +279,20 @@
     justify-content: center;
     gap: 35px;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .team-card {
     background: #fff;
-    width: 350px;
+    width: 300px;
     height: 430px;
     border-radius: 20px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
     transition: 0.3s ease;
     overflow: hidden;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .team-card:hover {
@@ -297,18 +301,21 @@
 }
 
 .team-card img {
-   width: 100%;
-    height: 70%;
+    width: 100%;
+    height: 75%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     margin-bottom: 0;
 }
 
 .team-card h3 {
-    font-size: 24px;
+    font-size: 22px;
     color: #705a5a;
-    margin-bottom: 5px;
-    padding-top: 50px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
 }
 
 
@@ -322,7 +329,7 @@
 .stats-container {
     width: 100%;
     max-width: 1200px;
-    background: linear-gradient(100deg,#e4d2bd,#d6c0a7);
+    background: linear-gradient(100deg, #e4d2bd, #d6c0a7);
     padding: 40px 20px;
     border-radius: 25px;
     display: flex;
@@ -350,4 +357,3 @@
         gap: 25px;
     }
 }
-

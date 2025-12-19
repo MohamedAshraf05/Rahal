@@ -1,201 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Razal – Explore Destinations</title>
+    <title>Rahhal – Explore Destinations</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/destination.css" />
 </head>
+
 <body>
 
-<div id="navbar"></div>
-<!-- HERO SECTION -->
-<section class="hero">
-    <h1>Explore Destinations</h1>
-    <p>Browse through our curated collection of amazing destinations around the world</p>
+    <div id="navbar"></div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Discover Egypt’s Heritage</h1>
+        <p>Browse through Egypt’s most iconic historical destinations</p>
 
-    <div class="search-box">
-        <i class="icon fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="searchInput" placeholder="Search by destination or country...">
-    </div>
+        <div class="search-box">
+            <i class="icon fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search by destination or country...">
+        </div>
 
-    <!-- FILTERS -->
-    <div class="filters">
-        <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter="Beach">Beach</button>
-        <button class="filter" data-filter="Mountain">Mountain</button>
-        <button class="filter" data-filter="Desert">Desert</button>
-        <button class="filter" data-filter="Historical">Historical</button>
-        <button class="filter" data-filter="City">City</button>
-    </div>
-</section>
+        <!-- FILTERS -->
+        <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="Historical">Historical</button>
+            <button class="filter" data-filter="Beach">Beach</button>
+            <button class="filter" data-filter="Adventure">Adventure</button>
+            <button class="filter" data-filter="Museum">Museum</button>
+            <button class="filter" data-filter="Desert Safari">Desert Safari</button>
+            <button class="filter" data-filter="Religious">Religious</button>
 
-<div class="top-places-container">
+        </div>
+    </section>
 
-    <div class="top-places-card">
-        <span class="card-tag">Historical</span>
-        <img src="assets/imgs/photo_2025-12-08_16-07-32.jpg" alt="Karnak Temple">
+    <div class="top-places-container">
 
-        <div class="card-details">
-            <h3>Karnak Temple</h3>
-            <p class="location">Luxur, Egypt</p>
-            <div class="rating-price-row">
-                <div class="rating">
-                    <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
-                    <span class="rate-value">5.0</span>
+        <div class="top-places-card">
+            <span class="card-tag">Historical</span>
+            <img src="assets/imgs/photo_2025-12-08_16-07-32.jpg" alt="Karnak Temple">
+
+            <div class="card-details">
+                <h3>Karnak Temple</h3>
+                <p class="location">Luxur, Egypt</p>
+                <div class="rating-price-row">
+                    <div class="rating">
+                        <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
+                        <span class="rate-value">5.0</span>
+                    </div>
+                    <span class="price">$ 1200</span>
                 </div>
-                <span class="price">$ 1200</span>
+            </div>
+        </div>
+
+        <div class="top-places-card">
+            <span class="card-tag">Historical</span>
+            <img src="assets/imgs/photo_2025-12-08_16-07-51.jpg" alt="Philae Temple">
+            <div class="card-details">
+                <h3>Philae Temple</h3>
+                <p class="location">Asawan, Egypt</p>
+                <div class="rating-price-row">
+                    <div class="rating">
+                        <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
+                        <span class="rate-value">5.0</span>
+                    </div>
+                    <span class="price">$ 890</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-places-card">
+            <span class="card-tag">Beach</span>
+            <img src="assets/imgs/photo_2025-12-08_16-07-39.jpg" alt="Ras Mohammed">
+            <div class="card-details">
+                <h3>Ras Mohammed</h3>
+                <p class="location">Sinai, Egypt</p>
+                <div class="rating-price-row">
+                    <div class="rating">
+                        <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
+                        <span class="rate-value">5.0</span>
+                    </div>
+                    <span class="price">$ 650</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-places-card">
+            <span class="card-tag">Desert Safari</span>
+            <img src="assets/imgs/photo_2025-12-08_16-08-11.jpg" alt="Siwa Oasis">
+            <div class="card-details">
+                <h3>Siwa Oasis</h3>
+                <p class="location">Matrouh, Egypt</p>
+                <div class="rating-price-row">
+                    <div class="rating">
+                        <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
+                        <span class="rate-value">5.0</span>
+                    </div>
+                    <span class="price">$ 780</span>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="top-places-card">
-        <span class="card-tag">Historical</span>
-        <img src="assets/imgs/photo_2025-12-08_16-07-51.jpg" alt="Philae Temple">
-        <div class="card-details">
-            <h3>Philae Temple</h3>
-            <p class="location">Asawan, Egypt</p>
-            <div class="rating-price-row">
-                <div class="rating">
-                    <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
-                    <span class="rate-value">5.0</span>
-                </div>
-                <span class="price">$ 890</span>
+    <!-- Destinations Comparison Table -->
+    <section class="destination-table-section">
+        <div class="table-header">
+            <h2 class="table-title">Destinations Comparison</h2>
+        </div>
+
+        <div class="table-wrapper">
+            <table class="destinations-table">
+                <thead>
+                    <tr>
+                        <th><i class="fa-solid fa-location-dot"></i> Destination</th>
+                        <th>Country</th>
+                        <th><i class="fa-regular fa-sun"></i> Best Season</th>
+                        <th><i class="fa-solid fa-dollar-sign"></i> Average Cost</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Santorini</td>
+                        <td>Greece</td>
+                        <td><span class="season summer">☀ Summer</span></td>
+                        <td>$1200</td>
+                        <td><span class="cat-tag">Beach</span></td>
+                    </tr>
+                    <tr>
+                        <td>Sahara Desert</td>
+                        <td>Morocco</td>
+                        <td><span class="season winter">❄ Winter</span></td>
+                        <td>$890</td>
+                        <td><span class="cat-tag">Desert</span></td>
+                    </tr>
+                    <tr>
+                        <td>Petra</td>
+                        <td>Jordan</td>
+                        <td><span class="season spring">🌼 Spring</span></td>
+                        <td>$1050</td>
+                        <td><span class="cat-tag">Historical</span></td>
+                    </tr>
+                    <tr>
+                        <td>Maldives</td>
+                        <td>Maldives</td>
+                        <td><span class="season winter">❄ Winter</span></td>
+                        <td>$2500</td>
+                        <td><span class="cat-tag">Beach</span></td>
+                    </tr>
+                    <tr>
+                        <td>Swiss Alps</td>
+                        <td>Switzerland</td>
+                        <td><span class="season winter">❄ Winter</span></td>
+                        <td>$1800</td>
+                        <td><span class="cat-tag">Mountain</span></td>
+                    </tr>
+                    <tr>
+                        <td>Dubai</td>
+                        <td>UAE</td>
+                        <td><span class="season winter">❄ Winter</span></td>
+                        <td>$1500</td>
+                        <td><span class="cat-tag">City</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Popular Activities Section -->
+    <section class="activities-section">
+        <h2 class="activities-title">Popular Activities</h2>
+
+        <div class="activities-container">
+            <div class="activity-item">
+                <div class="icon-circle"><img src="assets/imgs/beach.png" alt="Beach"></div>
+                <p>Beach Relaxation</p>
+            </div>
+
+            <div class="activity-item">
+                <div class="icon-circle"><img src="assets/imgs/mountain.png" alt="Mountain"></div>
+                <p>Mountain Hiking</p>
+            </div>
+
+            <div class="activity-item">
+                <div class="icon-circle"><img src="assets/imgs/culture.png" alt="Culture"></div>
+                <p>Cultural Tours</p>
+            </div>
+
+            <div class="activity-item">
+                <div class="icon-circle"><img src="assets/imgs/city.png" alt="City"></div>
+                <p>City Exploration</p>
             </div>
         </div>
-    </div>
-
-    <div class="top-places-card">
-        <span class="card-tag">Beach</span>
-        <img src="assets/imgs/photo_2025-12-08_16-07-39.jpg" alt="Ras Mohammed">
-        <div class="card-details">
-            <h3>Ras Mohammed</h3>
-            <p class="location">Sinai, Egypt</p>
-            <div class="rating-price-row">
-                <div class="rating">
-                    <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
-                    <span class="rate-value">5.0</span>
-                </div>
-                <span class="price">$ 650</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="top-places-card">
-        <span class="card-tag">Desert Safari</span>
-        <img src="assets/imgs/photo_2025-12-08_16-08-11.jpg" alt="Siwa Oasis">
-        <div class="card-details">
-            <h3>Siwa Oasis</h3>
-            <p class="location">Matrouh, Egypt</p>
-            <div class="rating-price-row">
-                <div class="rating">
-                    <img src="assets/imgs/photo_2025-12-08_16-07-59.jpg" alt="rate">
-                    <span class="rate-value">5.0</span>
-                </div>
-                <span class="price">$ 780</span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Destinations Comparison Table -->
-<section class="destination-table-section">
-    <div class="table-header">
-        <h2 class="table-title">Destinations Comparison</h2>
-    </div>
-
-    <div class="table-wrapper">
-        <table class="destinations-table">
-            <thead>
-                <tr>
-                    <th><i class="fa-solid fa-location-dot"></i> Destination</th>
-                    <th>Country</th>
-                    <th><i class="fa-regular fa-sun"></i> Best Season</th>
-                    <th><i class="fa-solid fa-dollar-sign"></i> Average Cost</th>
-                    <th>Category</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Santorini</td>
-                    <td>Greece</td>
-                    <td><span class="season summer">☀ Summer</span></td>
-                    <td>$1200</td>
-                    <td><span class="cat-tag">Beach</span></td>
-                </tr>
-                <tr>
-                    <td>Sahara Desert</td>
-                    <td>Morocco</td>
-                    <td><span class="season winter">❄ Winter</span></td>
-                    <td>$890</td>
-                    <td><span class="cat-tag">Desert</span></td>
-                </tr>
-                <tr>
-                    <td>Petra</td>
-                    <td>Jordan</td>
-                    <td><span class="season spring">🌼 Spring</span></td>
-                    <td>$1050</td>
-                    <td><span class="cat-tag">Historical</span></td>
-                </tr>
-                <tr>
-                    <td>Maldives</td>
-                    <td>Maldives</td>
-                    <td><span class="season winter">❄ Winter</span></td>
-                    <td>$2500</td>
-                    <td><span class="cat-tag">Beach</span></td>
-                </tr>
-                <tr>
-                    <td>Swiss Alps</td>
-                    <td>Switzerland</td>
-                    <td><span class="season winter">❄ Winter</span></td>
-                    <td>$1800</td>
-                    <td><span class="cat-tag">Mountain</span></td>
-                </tr>
-                <tr>
-                    <td>Dubai</td>
-                    <td>UAE</td>
-                    <td><span class="season winter">❄ Winter</span></td>
-                    <td>$1500</td>
-                    <td><span class="cat-tag">City</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-<!-- Popular Activities Section -->
-<section class="activities-section">
-    <h2 class="activities-title">Popular Activities</h2>
-
-    <div class="activities-container">
-        <div class="activity-item">
-            <div class="icon-circle"><img src="assets/imgs/beach.png" alt="Beach"></div>
-            <p>Beach Relaxation</p>
-        </div>
-
-        <div class="activity-item">
-            <div class="icon-circle"><img src="assets/imgs/mountain.png" alt="Mountain"></div>
-            <p>Mountain Hiking</p>
-        </div>
-
-        <div class="activity-item">
-            <div class="icon-circle"><img src="assets/imgs/culture.png" alt="Culture"></div>
-            <p>Cultural Tours</p>
-        </div>
-
-        <div class="activity-item">
-            <div class="icon-circle"><img src="assets/imgs/city.png" alt="City"></div>
-            <p>City Exploration</p>
-        </div>
-    </div>
-</section>
+    </section>
 
 
-<div id="footer"></div>
+    <div id="footer"></div>
 
-<script src="assets/js/destination.js"></script>
-<script src="assets/js/load.js"></script>
+    <script src="assets/js/destination.js"></script>
+    <script src="assets/js/load.js"></script>
 
 </body>
+
 </html>
